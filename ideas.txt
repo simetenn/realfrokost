@@ -1,0 +1,18 @@
+Introduce my background
+
+Range of different topics in computational neuroscience fra psykologer til meg.
+
+clustering project
+
+How to model neurons on the PC
+
+Problem intrinsic variability of parameters and parameters that are not determined by experiments.
+
+how to create a model (create the model, parameter estimation, UQ)
+
+What is uncertainty quantification
+The simplest methods - monte carlo methods
+
+Problem med spiking data
+
+UncertainPy
