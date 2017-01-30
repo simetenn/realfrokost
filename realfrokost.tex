@@ -3,36 +3,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, pdfpages, pdflscape, lscape, color, listings, hyperref, amssymb, graphicx, textcomp,varioref, afterpage, subcaption, float, bm, tikz, colortbl, caption}
 
-% \global
-% \newcommand{\Fig}[1]{Figure \ref{#1}}
-% \newcommand{\fig}[1]{figure \ref{#1}}
-% \newcommand{\tab}[1]{table \ref{#1}}
-% \newcommand{\eq}[1]{equation \ref{#1}}
-% \newcommand{\Eq}[1]{Equation \ref{#1}}
-% \newcommand{\alg}[1]{algorithm \ref{#1}}
-% \newcommand{\Alg}[1]{Algorithm \ref{#1}}
-% \newcommand{\chp}[1]{chapter  \ref{#1}}
-% \newcommand{\Chp}[1]{Chapter  \ref{#1}}
-% \newcommand{\e}[1]{\cdot 10^{#1}}
-% \newcommand{\h}{\hbar}
-% \newcommand{\der}[2]{\frac{\partial #1}{\partial #2}}
-% \newcommand{\dder}[2]{\frac{\partial^2 #1}{\partial #2^2}}
-% \newcommand{\p}{\boldsymbol{P}}
-% \newcommand{\q}{\boldsymbol{q}}
-% \newcommand{\norm}[1]{\left\lVert#1\right\rVert_{\!Q}}
-% \newcommand{\inner}[1]{\left\langle#1\right\rangle_{\!Q}}
-% \newcommand{\coef}[2]{\frac{\inner{#1,#2}}{\norm{#2}^2}}
-%
-% \newcommand{\gooditem}[1]{\setbeamercolor{item}{fg=green}\item #1}
-% \newcommand{\baditem}[1]{\setbeamercolor{item}{fg=red}\item #1}
-%
-% \DeclareMathOperator*{\argmin}{argmin}
-% \DeclareMathOperator*{\argmax}{argmax}
-%
-% \newcommand{\E}[1]{\mbox{E}\!\left(#1\right)}
-% \newcommand{\Var}[1]{\mbox{Var}\!\left(#1\right)}
-% \newcommand{\Cov}[1]{\mbox{Cov}\!\left(#1\right)}
-
 
 
 
@@ -172,42 +142,30 @@
 
 
 
-\begin{frame}
-% \begin{center}
-    \textbf{\color{myred}\Large UncertainPy: A Python toolbox \\
-    \vspace{1mm} for uncertainty quantification of \\
-    \vspace{2mm} computational neuroscience models}
-% \end{center}
+\begin{frame}%{\color{myred} Beregningsorientert nevrovitenskap}
+\begin{center}
+\vspace{-40mm}
+    \textbf{\color{myred}\Large Beregningsorientert nevrovitenskap}
+    \vspace{3mm}
+
+    Simen Tennøe
+\end{center}
+
+
 
 % \frametitle{\textbf{\color{myred}\Large Chaospy: \\ \vspace{1mm} A modular implementation of polynomial\\ \vspace{1mm} chaos expansions and Monte Carlo methods}}
 
-     \large \vspace{8mm} Simen Tennøe
-
-      \vspace{6mm}
-      \footnotesize Supervisors:
-
-    %
-      \vspace{1mm}
-      Jonathan Feinberg
-
-      Hans Petter Langtangen
-
-      Gaute Einevoll
-
-      Geir Halnes
-
-      \vspace{5mm}
-    \small University of Oslo, CINPLA
- %
- % \begin{tikzpicture}[remember picture,overlay]
- %    \node [xshift=0.19\paperwidth,yshift=-0.14\paperheight] at (current page.center)
- %          {\includegraphics[width = 0.375\paperwidth ]{logo_small.png}};
- %  \end{tikzpicture}
+ \begin{tikzpicture}[remember picture,overlay]
+    \node [xshift=0\paperwidth, yshift=-0.1\paperheight] at (current page.center)
+          {\includegraphics[width = 0.9\paperwidth ]{network.jpeg}};
+  \end{tikzpicture}
 
   % \begin{tikzpicture}[remember picture,overlay]
   %   \node [xshift=1.35cm,yshift=0.55cm] at (current page.south west)
   %         {\includegraphics[width = 0.2\paperwidth ]{cinpla.png}};
   % \end{tikzpicture}
+
+      %  \large \vspace{8mm} Simen Tennøe  - \small University of Oslo, CINPLA
 
 \end{frame}
 
@@ -215,20 +173,18 @@
 
 
 \begin{frame}[fragile]{}
-
-
     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-      \node [align=left, xshift=-0.4\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
-            {\includegraphics[width = 0.2\textwidth]{alert.jpg}};
-      \node[align=left] at (image3.east) {\hspace{5cm} \bf Grunnlegende nevrovitenskap};
+      \node [align=left, xshift=-0.4\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{brain.jpg}};
+      \node[align=left] at (image3.east) {\hspace{6cm} \bf Grunnlegende nevrovitenskap};
     \end{tikzpicture}
 
   \pause
 
   \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-  \node [align=left, xshift=-0.2\textwidth,yshift=-0.05\textwidth] (image1) at (current page.center)
-      {\includegraphics[width = 0.25\textwidth]{alert.jpg}};
-  \node[align=left] at (image1.east) {\hspace{4.5cm} \bf Beregningsorientert nevrovitenskap};
+  \node [align=left, xshift=-0.2\textwidth,yshift=0\textwidth] (image1) at (current page.center)
+      {\includegraphics[width = 0.2\textwidth]{brain_circuits.jpg}};
+  \node[align=left] at (image1.east) {\hspace{7.5cm} \bf Beregningsorientert nevrovitenskap};
   \end{tikzpicture}
 
 \pause
@@ -236,7 +192,7 @@
 
     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
       \node [align=left, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
-            {\includegraphics[width = 0.25\textwidth]{alert.jpg}};
+            {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
       \node[align=left] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
     \end{tikzpicture}
 
@@ -245,29 +201,279 @@
 
 
 
-\begin{frame}{Computational models are created from experimental data}
+
+
+
+
+
+
+
+
+\begin{frame}{Bakgrunn fra teoretisk astrofysikk}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{galaxy.jpg}}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{}
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \node [align=left, xshift=-0.4\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{brain.jpg}};
+      \node[align=left] at (image3.east) {\hspace{6cm} \bf Grunnlegende nevrovitenskap};
+    \end{tikzpicture}
+
+  \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+  \node [align=left, opacity=0.35, xshift=-0.2\textwidth,yshift=0\textwidth] (image1) at (current page.center)
+      {\includegraphics[width = 0.2\textwidth]{brain_circuits.jpg}};
+  \node[align=left, opacity=0.35] at (image1.east) {\hspace{7.5cm} \bf Beregningsorientert nevrovitenskap};
+  \end{tikzpicture}
+
+
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \node [align=left, opacity=0.35, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
+      \node[align=left, opacity=0.35] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
+    \end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}{Nevrovitenskap er studiet hjernen og nervesystemet}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{brain.jpg}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Hjerneceller (nevroner) kommuniserer via elektriske signaler}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{alert.jpg}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Nevroner fungerer som små batterier}
+    \vspace{-0.5cm}
+   \begin{figure}
+       {\includegraphics[width=0.9\textwidth]{battery.jpg}}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Forskjellig konsentrasjon av positive og negative ioner (elektriske ladninger) setter opp ett elektrisk felt}
+\vspace{-5mm}
+   \begin{figure}
+        \only<1>{\includegraphics[width=0.8\textwidth]{membrane.png}}
+        \only<2>{\includegraphics[width=0.8\textwidth]{membraneNa.png}}
+        \only<3>{\includegraphics[width=0.8\textwidth]{membraneA.png}}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Ione pumper flytter ioner over cellemembranen}
+   \begin{figure}
+       {\includegraphics[width=0.9\textwidth]{ion_pump.png}}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Ione kanaler åpnes og slipper raskt ut ioner}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{ion_channel.png}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Signalene som sendes kalles aksjonspotensialer og er kortvarige forandringer i det elektriske potensialet}
+   \begin{figure}
+       {\includegraphics[width=0.7\textwidth]{ap.png}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Aksjonspotensialene beveger seg langs aksonet}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{neuron2.png}}
+\end{figure}
+\end{frame}
+
+% \begin{frame}{De elektriske signalene lages ved at det er forskjellig konsentrasjon av ioner }
+%    \begin{figure}
+%        {\includegraphics[width=1\textwidth]{membrane.png}}
+% \end{figure}
+% \end{frame}
+
+\begin{frame}{Signaler sendes mellom nevroner i nettverk som gjør... noe}
+   \begin{figure}
+       {\includegraphics[width=0.8\textwidth]{network2.jpg}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Det er enorme skalaforskjeller på de forskjellige fenomenene i hjernen}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{alert.jpg}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]{}
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \node [align=left, opacity=0.35, xshift=-0.4\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{brain.jpg}};
+      \node[align=left, opacity=0.35] at (image3.east) {\hspace{6cm} \bf Grunnlegende nevrovitenskap};
+    \end{tikzpicture}
+
+  \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+  \node [align=left, xshift=-0.2\textwidth,yshift=0\textwidth] (image1) at (current page.center)
+      {\includegraphics[width = 0.2\textwidth]{brain_circuits.jpg}};
+  \node[align=left] at (image1.east) {\hspace{7.5cm} \bf Beregningsorientert nevrovitenskap};
+  \end{tikzpicture}
+
+
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \node [align=left, opacity=0.35, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
+      \node[align=left, opacity=0.35] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Ett nevron kan modeleres som en elektrisk krets}
+   \begin{figure}
+       \only<1>{\includegraphics[width=1\textwidth]{circuit1_1.png}}
+       \only<2>{\includegraphics[width=1\textwidth]{circuit1_2.png}}
+       \only<3>{\includegraphics[width=1\textwidth]{circuit1_3.png}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Ett (punkt) nevron kan modeleres som en elektrisk krets}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{center}
+        \begin{figure}
+            {\includegraphics[width=1\textwidth]{circuit2.png}}
+     \end{figure}
+    \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}  %%<--- here
+        \begin{center}
+            \begin{equation*}
+                   \only<1>{ \color{white}\frac{{\mathrm d} V_m}{{\mathrm d} }}
+                   \only<2>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{ione kanaler}}}
+                   \only<3>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{ione kanaler}}}}
+            \end{equation*}
+         \end{center}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Mange kretser kan settes sammen til et nevron med utstrekning}
    \begin{figure}
      \only<1>{\includegraphics[width=1\textwidth]{neuron.png}}
      \only<2->{\includegraphics[width=1\textwidth]{model_creation.png}}
 \end{figure}
-\vspace{5mm}
-\begin{align*}
-   \only<-2>{ \color{white}\frac{{\mathrm d} V_m}{{\mathrm d} }}
-   \only<3>{ I &= C_m\frac{{\mathrm d} V_m}{{\mathrm d} t}  + I_{K} + I_{Na} + I_{l}}
-   \only<4>{I &= C_m\frac{{\mathrm d} V_m}{{\mathrm d} t}  + {\bf\color{red}I_{K}}+ {\bf\color{red}I_{Na}} + {\bf \color{red}I_{l}}}
-\end{align*}
-
 \end{frame}
 
 
-\begin{frame}{Different parameters give different model results}
-    \[I = C_m\frac{{\mathrm d} V_m}{{\mathrm d} t}  + {\bf\color{logogrey}I_{K}} + {\bf\color{logoyellow}I_{Na}} + {\bf\color{logored}I_{l}}\]
+\begin{frame}{Første modelen av et nevron ble laget av Hodgkin og Huxley i 1952}
+   \begin{figure}
+     \only<1>{\includegraphics[width=1\textwidth]{original_hh.png}}
+     \only<2>{\includegraphics[width=1\textwidth]{original_hh2.png}}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Nevroner modeller kan settes sammen til nettverk}
+   \begin{figure}
+     {\includegraphics[width=1\textwidth]{network_large.jpg}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Realistiske nevroner krever tunge beregninger, enklere modeller kan brukes istedenfor}
+   \begin{figure}
+     {\includegraphics[width=1\textwidth]{alert.jpg}}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}[fragile]{}
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \node [align=left, opacity=0.35, xshift=-0.4\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{brain.jpg}};
+      \node[align=left, opacity=0.35] at (image3.east) {\hspace{6cm} \bf Grunnlegende nevrovitenskap};
+    \end{tikzpicture}
+
+  \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+  \node [align=left, opacity=0.35, xshift=-0.2\textwidth,yshift=0\textwidth] (image1) at (current page.center)
+      {\includegraphics[width = 0.2\textwidth]{brain_circuits.jpg}};
+  \node[align=left, opacity=0.35] at (image1.east) {\hspace{7.5cm} \bf Beregningsorientert nevrovitenskap};
+  \end{tikzpicture}
+
+
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \node [align=left,  xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
+            {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
+      \node[align=left] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
+    \end{tikzpicture}
+\end{frame}
+
+
+
+
+\begin{frame}{Forskjellige parametre gir forskjellige resultater}
+    \begin{overlayarea}{\textwidth}{\textheight}
+
+
+\only<1>{\[I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{ione kanaler}}\]}
+\only<2->{\[I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{ione kanaler}}}\]}
     \vspace{-5mm}
     \begin{figure}
-   {\includegraphics[width=0.8\textwidth]{hh_variation.png}}
+   \only<3>{\includegraphics[width=0.8\textwidth]{hh_variation.png}}
    \end{figure}
+\end{overlayarea}
+\end{frame}
+
+
+\begin{frame}{Å lage en beregningsmodel består av tre steg, å sette opp modelen, estimere parametre og beregne usikkerhetene}
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \onslide<1-3>{\node [align=left, xshift=-0.35\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
+            {$I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{ione kanaler}}$};
+      \node[align=left] at (image3.east) {\hspace{4cm} \bf Sette opp modellen};}
+    \end{tikzpicture}
+   %
+   % \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+   %   \onslide<1-3>{\node [align=left, xshift=-0.4\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
+   %         {\includegraphics[width = 0.4\textwidth]{compartmental.png}};
+   %   \node[align=left] at (image3.east) {\hspace{5cm} \bf Model creation};}
+   % \end{tikzpicture}
+
+  \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+  \onslide<2-3>{\node [align=left, xshift=-0.2\textwidth,yshift=-0.05\textwidth] (image1) at (current page.center)
+      {\includegraphics[width = 0.15\textwidth]{parameters.png}};
+  \node[align=left] at (image1.east) {\hspace{4.5cm} \bf Parameter estimering};}
+  \end{tikzpicture}
+
+    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+      \onslide<3-4>{\node [align=left, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
+            {\includegraphics[width = 0.25\textwidth]{confidence_interval.png}};
+      \node[align=left] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegning};}
+    \end{tikzpicture}
 
 \end{frame}
+
+
+
 
 
 
@@ -277,7 +483,7 @@
 %     \end{figure}
 % \end{frame}
 
-\begin{frame}{Traditional models are deterministic}
+\begin{frame}{Tradisjonelle modeller er deterministiske}
     \begin{figure}
       %  \only<1>{\includegraphics[width=0.6\textwidth]{model2.png}}
        \includegraphics[width=1.1\textwidth]{deterministic.png}
@@ -286,20 +492,34 @@
 \end{frame}
 
 
-\begin{frame}{Problem: Biological parameters are not fixed, but have inherent variability}
+\begin{frame}{Problemet er at biologiske parametre ikke er fiksert, men varierer}
+        \vspace{-1cm}
     \begin{figure}
 \includegraphics[width=1\textwidth]{distributions.png}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Solution: Perform an uncertainty quantification, which relates uncertain input to uncertain output}
+
+
+\begin{frame}{Løsningen er å gjøre en usikkerhetsberegning}
+        \vspace{-1cm}
+    \begin{figure}
+      %  \only<1>{\includegraphics[width=0.6\textwidth]{model2.png}}
+       {\includegraphics[width=1.1\textwidth]{probabalistic_no_uncertainpy.png}}
+
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Min forskning går ut på å lage software for å gjøre dette}
+    \vspace{-1cm}
     \begin{figure}
       %  \only<1>{\includegraphics[width=0.6\textwidth]{model2.png}}
        {\includegraphics[width=1.1\textwidth]{probabalistic.png}}
 
     \end{figure}
 \end{frame}
-
 
 % \begin{frame}{Uncertainty quantification relates uncertain parameters and model results}
 %     \begin{figure}
@@ -313,32 +533,7 @@
 
 
 
-\begin{frame}{Creating a computational model consists of three steps, model creation, parameter estimation and uncertainty quantification}
-    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-      \onslide<1-3>{\node [align=left, xshift=-0.35\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
-            {$I = C_m\frac{{\mathrm d} V_m}{{\mathrm d} t}  + I_{\text{ion channels}}$};
-      \node[align=left] at (image3.east) {\hspace{4cm} \bf Model creation};}
-    \end{tikzpicture}
-   %
-   % \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-   %   \onslide<1-3>{\node [align=left, xshift=-0.4\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
-   %         {\includegraphics[width = 0.4\textwidth]{compartmental.png}};
-   %   \node[align=left] at (image3.east) {\hspace{5cm} \bf Model creation};}
-   % \end{tikzpicture}
 
-  \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-  \onslide<2-3>{\node [align=left, xshift=-0.2\textwidth,yshift=-0.05\textwidth] (image1) at (current page.center)
-      {\includegraphics[width = 0.15\textwidth]{parameters.png}};
-  \node[align=left] at (image1.east) {\hspace{4.5cm} \bf Estimate parameters};}
-  \end{tikzpicture}
-
-    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-      \onslide<3-4>{\node [align=left, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
-            {\includegraphics[width = 0.25\textwidth]{confidence_interval.png}};
-      \node[align=left] at (image2.east) {\hspace{4cm} \bf Quantify uncertainties};}
-    \end{tikzpicture}
-
-\end{frame}
 
 
 
@@ -369,7 +564,7 @@
 %    \end{center}
 %\end{frame}
 
-\begin{frame}{Result: Variations in an action potential \\(90\% confidence interval)}
+\begin{frame}{Resultat: Variasjon i aksjonspotensialet \\(90\% konfidensintervall)}
    \vspace{-5mm}
 \begin{figure}
    \only<1>{\includegraphics[width=0.8\textwidth]{confidence_interval.png}}
@@ -379,7 +574,7 @@
 
 
 
-\begin{frame}{\onslide<1->{Pointwise comparison \onslide<2->{is problematic since "the same" spike can occur at different times with different parameters}}}
+\begin{frame}{\onslide<1->{Punktvis sammenligning \onslide<2->{er problematisk siden "samme" aksjonspotensial kan komme til forskjellige tider med forskjellige parametre}}}
    \vspace{-5mm}
    \begin{figure}
     %   \only<1>{\includegraphics[width=1\textwidth]{hh_basic.png}}
@@ -397,19 +592,19 @@
 % \end{frame}
 
 
-\begin{frame}{Solution: Calculate the uncertainty for features such as the number of spikes {\color{white} dummy text dummy text dummy text dummy text dummy text} }
+\begin{frame}{Løsningen er å jobbe med egenskaper til nevronet slik som antal aksjonspotensialer{\color{white} dummy text dummy text dummy text dummy text dummy text} }
 \vspace{-5mm}
 \begin{figure}
    \includegraphics[width=0.8\textwidth]{hh_features.png}
 \end{figure}
 \end{frame}
 
-\begin{frame}{UncertainPy calculates the uncertainty for features such as the number of spikes}
-\vspace{-5mm}
-\begin{figure}
-   \includegraphics[width=0.65\textwidth]{features.png}
-\end{figure}
-\end{frame}
+% \begin{frame}{UncertainPy calculates the uncertainty for features such as the number of spikes}
+% \vspace{-5mm}
+% \begin{figure}
+%    \includegraphics[width=0.65\textwidth]{features.png}
+% \end{figure}
+% \end{frame}
 
 
 % \begin{frame}{Sensitivity of the result for each parameter in the Hodgkin-Huxley model}
@@ -440,33 +635,33 @@
 
 
 
-  \begin{frame}{Summary: UncertainPy is a novel Python toolbox, tailored to perform uncertainty quantification in neuroscience models}
-\vspace{-10mm}
+  \begin{frame}{Oppsumering: beregningsorientert nevrovitenskap modelerer nevroner som elektriske kretser}
+\vspace{-15mm}
 \begin{columns}
 
      \column{.5\textwidth}
      \begin{center}
         \raggedright
-      \bf{UncertainPy calculates uncertainties of a model from uncertain parameters}
+      \bf{Nevroner kan modeleres som elektriske kretser i ett nettverk}
      \end{center}
      \column{.5\textwidth}
      \begin{center}
-            \includegraphics[width=0.6\textwidth]{confidence_interval_small.png}
+            \includegraphics[width=0.4\textwidth]{circuit2.png}
      \end{center}
 
  \end{columns}
 
-% \vspace{5mm}
-
+ % \vspace{5mm}
+\pause
 \begin{columns}
   \column{.5\textwidth}
   \begin{center}
       \raggedright
-   \bf{UncertainPy is feature based}
+   \bf{Usikkerhetsberegninger gjør at man kan ta hensyn til biologiske parametre som varierer}
   \end{center}
        \column{.5\textwidth}
      \begin{center}
-            \includegraphics[width=0.5\textwidth]{features.png}
+            \includegraphics[width=0.9\textwidth]{probabalistic_no_uncertainpy.png}
      \end{center}
 
  \end{columns}
@@ -481,7 +676,7 @@
 \pause
 \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
 
-  \node[align=left, yshift=0.1\textwidth] at (current page.south){ \bf \large Spørsmål?};
+  \node[align=left, yshift=0.1\textwidth, opacity=0.9] at (current page.south){ \bf \large Takk for meg};
 \end{tikzpicture}
 
 

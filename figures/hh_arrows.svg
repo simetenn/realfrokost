@@ -47,7 +47,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1863"
+     inkscape:window-width="1920"
      inkscape:window-height="1056"
      id="namedview4"
      showgrid="false"
@@ -55,10 +55,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.79541188"
-     inkscape:cx="231.94748"
-     inkscape:cy="391.89544"
-     inkscape:window-x="1977"
+     inkscape:zoom="1.047986"
+     inkscape:cx="120.91981"
+     inkscape:cy="334.28258"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10" /><g
@@ -66,7 +66,7 @@
      inkscape:groupmode="layer"
      inkscape:label="hh"
      transform="matrix(1.25,0,0,-1.25,0,675)"><path
-       d="M 0,0 720,0 720,540 0,540 0,0 Z"
+       d="m 0,-12.213903 720,0 0,561.374333 -720,0 0,-561.374333 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="path12"
        inkscape:connector-curvature="0" /><g

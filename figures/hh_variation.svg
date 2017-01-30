@@ -22,7 +22,7 @@
    inkscape:export-ydpi="90"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath148"><path
@@ -47,7 +47,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1863"
+     inkscape:window-width="1920"
      inkscape:window-height="1056"
      id="namedview4"
      showgrid="false"
@@ -55,10 +55,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.91642144"
-     inkscape:cx="513.78577"
-     inkscape:cy="329.99857"
-     inkscape:window-x="1977"
+     inkscape:zoom="0.85377544"
+     inkscape:cx="402.72191"
+     inkscape:cy="221.84083"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10" /><g
@@ -66,7 +66,7 @@
      inkscape:groupmode="layer"
      inkscape:label="hh"
      transform="matrix(1.25,0,0,-1.25,0,675)"><path
-       d="M 0,0 720,0 720,540 0,540 0,0 Z"
+       d="m 0,-16.866262 720,0 0,569.984462 -720,0 0,-569.984462 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="path12"
        inkscape:connector-curvature="0" /><g
