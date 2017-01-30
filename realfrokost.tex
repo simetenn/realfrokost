@@ -364,8 +364,8 @@
         \begin{center}
             \begin{equation*}
                    \only<1>{ \color{white}\frac{{\mathrm d} V_m}{{\mathrm d} }}
-                   \only<2>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{ione kanaler}}}
-                   \only<3>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{ione kanaler}}}}
+                   \only<2>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
+                   \only<3>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
             \end{equation*}
          \end{center}
     \end{column}
@@ -388,19 +388,25 @@
 \end{frame}
 
 
-\begin{frame}{Nevroner modeller kan settes sammen til nettverk}
+\begin{frame}{Nevron modeller kan settes sammen til nettverk}
    \begin{figure}
      {\includegraphics[width=1\textwidth]{network_large.jpg}}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Realistiske nevroner krever tunge beregninger, enklere modeller kan brukes istedenfor}
+
+\begin{frame}{Realistiske nevroner krever tunge beregninger, enklere modeller brukes derfor ofte istedenfor i netverk}
+\vspace{-10mm}
    \begin{figure}
-     {\includegraphics[width=1\textwidth]{alert.jpg}}
+     {\includegraphics[width=.7\textwidth]{iaf.png}}
 \end{figure}
 \end{frame}
 
-
+\begin{frame}{Neuronify lar dere lage realistiske netverk med enkle nevroner}
+   \begin{figure}
+     {\includegraphics[width=1\textwidth]{neuronify_network.png}}
+\end{figure}
+\end{frame}
 
 
 
@@ -435,8 +441,8 @@
     \begin{overlayarea}{\textwidth}{\textheight}
 
 
-\only<1>{\[I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{ione kanaler}}\]}
-\only<2->{\[I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{ione kanaler}}}\]}
+\only<1>{\[I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}\]}
+\only<2->{\[I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}\]}
     \vspace{-5mm}
     \begin{figure}
    \only<3>{\includegraphics[width=0.8\textwidth]{hh_variation.png}}
@@ -448,7 +454,7 @@
 \begin{frame}{Å lage en beregningsmodel består av tre steg, å sette opp modelen, estimere parametre og beregne usikkerhetene}
     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
       \onslide<1-3>{\node [align=left, xshift=-0.35\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
-            {$I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{ione kanaler}}$};
+            {$I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}$};
       \node[align=left] at (image3.east) {\hspace{4cm} \bf Sette opp modellen};}
     \end{tikzpicture}
    %
@@ -512,7 +518,7 @@
 
 
 
-\begin{frame}{Min forskning går ut på å lage software for å gjøre dette}
+\begin{frame}{Min forskning går ut på å lage software for å gjøre disse usikkerhetsberegningene}
     \vspace{-1cm}
     \begin{figure}
       %  \only<1>{\includegraphics[width=0.6\textwidth]{model2.png}}
