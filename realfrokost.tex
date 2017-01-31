@@ -156,17 +156,28 @@
 % \frametitle{\textbf{\color{myred}\Large Chaospy: \\ \vspace{1mm} A modular implementation of polynomial\\ \vspace{1mm} chaos expansions and Monte Carlo methods}}
 
  \begin{tikzpicture}[remember picture,overlay]
-    \node [xshift=0\paperwidth, yshift=-0.1\paperheight] at (current page.center)
-          {\includegraphics[width = 0.9\paperwidth ]{network.jpeg}};
+    \node [xshift=0\paperwidth, yshift=-0.05\paperheight] at (current page.center)
+          {\includegraphics[width = 0.85\paperwidth ]{network.jpeg}};
   \end{tikzpicture}
 
-  % \begin{tikzpicture}[remember picture,overlay]
-  %   \node [xshift=1.35cm,yshift=0.55cm] at (current page.south west)
-  %         {\includegraphics[width = 0.2\paperwidth ]{cinpla.png}};
-  % \end{tikzpicture}
+  \begin{tikzpicture}[remember picture,overlay]
+    \node [xshift=1.35cm,yshift=0.55cm] at (current page.south west)
+          {\includegraphics[width = 0.2\paperwidth ]{cinpla.png}};
+  \end{tikzpicture}
 
+  \begin{tikzpicture}[remember picture,overlay]
+    \node [xshift=-2.8cm, yshift=0.55cm] at (current page.south east)
+          {\includegraphics[width = 0.4\paperwidth ]{uio.png}};
+  \end{tikzpicture}
       %  \large \vspace{8mm} Simen Tennøe  - \small University of Oslo, CINPLA
 
+\end{frame}
+
+
+\begin{frame}{Bakgrunn fra teoretisk astrofysikk}
+   \begin{figure}
+       {\includegraphics[width=1\textwidth]{galaxy.jpg}}
+\end{figure}
 \end{frame}
 
 
@@ -209,12 +220,6 @@
 
 
 
-\begin{frame}{Bakgrunn fra teoretisk astrofysikk}
-   \begin{figure}
-       {\includegraphics[width=1\textwidth]{galaxy.jpg}}
-\end{figure}
-\end{frame}
-
 
 
 \begin{frame}[fragile]{}
@@ -247,7 +252,7 @@
 
 \begin{frame}{Hjerneceller (nevroner) kommuniserer via elektriske signaler}
    \begin{figure}
-       {\includegraphics[width=1\textwidth]{alert.jpg}}
+       {\includegraphics[width=1\textwidth]{network.jpeg}}
 \end{figure}
 \end{frame}
 
@@ -417,6 +422,33 @@
 
 
 
+\begin{frame}{Ett stort problem i nevrovitenskap er store skalaforskjeller}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{center}
+        \begin{figure}
+            \only<1->{\includegraphics[width=1\textwidth]{romlig.png}}
+     \end{figure}
+    \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}  %%<--- here
+        \begin{center}
+                \only<2>{\includegraphics[width=1\textwidth]{tid.png}}
+         \end{center}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Analyse av store mengder data er og en utfordring}
+
+    Vi har data fra hundrevis av elektroder i hjernen
+    \begin{figure}
+            {\includegraphics[width=1\textwidth]{analyse.png}}
+     \end{figure}
+
+\end{frame}
 
 
 \begin{frame}[fragile]{}
@@ -688,7 +720,7 @@
 \pause
 \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
 
-  \node[align=left, yshift=0.1\textwidth, opacity=0.9] at (current page.south){ \bf \large Takk for meg};
+  \node[align=left, yshift=0.1\textwidth, opacity=0.9] at (current page.south){ \bf \large Takk for meg!};
 \end{tikzpicture}
 
 
