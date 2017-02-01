@@ -157,7 +157,7 @@
 
  \begin{tikzpicture}[remember picture,overlay]
     \node [xshift=0\paperwidth, yshift=-0.05\paperheight] at (current page.center)
-          {\includegraphics[width = 0.85\paperwidth ]{network.jpeg}};
+          {\includegraphics[width = 0.73\paperwidth ]{network.jpeg}};
   \end{tikzpicture}
 
   \begin{tikzpicture}[remember picture,overlay]
@@ -176,7 +176,7 @@
 
 \begin{frame}{Bakgrunn fra teoretisk astrofysikk}
    \begin{figure}
-       {\includegraphics[width=1\textwidth]{galaxy.jpg}}
+       {\includegraphics[width=0.9\textwidth]{galaxy.jpg}}
 \end{figure}
 \end{frame}
 
@@ -252,7 +252,7 @@
 
 \begin{frame}{Hjerneceller (nevroner) kommuniserer via elektriske signaler}
    \begin{figure}
-       {\includegraphics[width=1\textwidth]{network.jpeg}}
+       {\includegraphics[width=0.9\textwidth]{network.jpeg}}
 \end{figure}
 \end{frame}
 
@@ -260,7 +260,7 @@
 \begin{frame}{Nevroner fungerer som små batterier}
     \vspace{-0.5cm}
    \begin{figure}
-       {\includegraphics[width=0.9\textwidth]{battery.jpg}}
+       {\includegraphics[width=0.4\textwidth]{battery.jpg}}
 \end{figure}
 \end{frame}
 
@@ -317,11 +317,36 @@
 \end{frame}
 
 
+
 \begin{frame}{Det er enorme skalaforskjeller på de forskjellige fenomenene i hjernen}
-   \begin{figure}
-       {\includegraphics[width=1\textwidth]{alert.jpg}}
-\end{figure}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{center}
+        \begin{figure}
+            \only<1->{\includegraphics[width=1\textwidth]{romlig.png}}
+     \end{figure}
+    \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}  %%<--- here
+        \begin{center}
+                \only<2>{\includegraphics[width=1\textwidth]{tid.png}}
+         \end{center}
+    \end{column}
+    \end{columns}
 \end{frame}
+
+
+
+\begin{frame}{Analyse av store mengder data er og en utfordring}
+
+    Vi har data fra hundrevis av elektroder i hjernen
+    \begin{figure}
+            {\includegraphics[width=1\textwidth]{analyse.png}}
+     \end{figure}
+
+\end{frame}
+
+
 
 
 \begin{frame}[fragile]{}
@@ -421,34 +446,6 @@
 
 
 
-
-\begin{frame}{Ett stort problem i nevrovitenskap er store skalaforskjeller}
-    \begin{columns}
-    \begin{column}{0.5\textwidth}
-        \begin{center}
-        \begin{figure}
-            \only<1->{\includegraphics[width=1\textwidth]{romlig.png}}
-     \end{figure}
-    \end{center}
-    \end{column}
-    \begin{column}{0.5\textwidth}  %%<--- here
-        \begin{center}
-                \only<2>{\includegraphics[width=1\textwidth]{tid.png}}
-         \end{center}
-    \end{column}
-    \end{columns}
-\end{frame}
-
-
-
-\begin{frame}{Analyse av store mengder data er og en utfordring}
-
-    Vi har data fra hundrevis av elektroder i hjernen
-    \begin{figure}
-            {\includegraphics[width=1\textwidth]{analyse.png}}
-     \end{figure}
-
-\end{frame}
 
 
 \begin{frame}[fragile]{}
@@ -607,6 +604,19 @@
 %        {\usebeamercolor[fg]{frametitle} \Large \bf UncertainPy performs these calculations}
 %    \end{center}
 %\end{frame}
+\begin{frame}{Monte Carlo metoder simulerer mange eksperimenter på en model, som så kan gjøre statistikk på resultatene fra}
+   \vspace{-5mm}
+\begin{figure}
+    \only<1>{\includegraphics[width=1.1\textwidth]{mc.png}}
+    \only<2>{\includegraphics[width=1.1\textwidth]{mc_1-1.png}}
+    \only<3>{\includegraphics[width=1.1\textwidth]{mc_1-2.png}}
+    \only<4>{\includegraphics[width=1.1\textwidth]{mc_1-3.png}}
+    \only<5>{\includegraphics[width=1.1\textwidth]{mc_2.png}}
+    \only<6>{\includegraphics[width=1.1\textwidth]{mc_3.png}}
+\end{figure}
+\end{frame}
+
+
 
 \begin{frame}{Resultat: Variasjon i aksjonspotensialet \\(90\% konfidensintervall)}
    \vspace{-5mm}
