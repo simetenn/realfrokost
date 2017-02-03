@@ -297,7 +297,7 @@
 
 \begin{frame}{Ione pumper flytter ioner over cellemembranen}
    \begin{figure}
-       {\includegraphics[width=0.9\textwidth]{ion_pump.png}}
+       {\includegraphics[width=1\textwidth]{ion_pump2.png}}
 \end{figure}
 \end{frame}
 
@@ -434,17 +434,6 @@
 % \end{frame}}
 
 
-\begin{frame}
-    \fullimage{point_neuron.png}{0.4}
-\end{frame}
-
-\begin{frame}{Mange kretser kan settes sammen til et nevron med utstrekning}
-   \begin{figure}
-     \only<1>{\includegraphics[width=1\textwidth]{neuron.png}}
-     \only<2->{\includegraphics[width=1\textwidth]{model_creation.png}}
-\end{figure}
-\end{frame}
-
 
 % \begin{frame}{Første modelen av et nevron ble laget av Hodgkin og Huxley i 1952}
 %    \begin{figure}
@@ -491,6 +480,19 @@
 %      {\includegraphics[width=1\textwidth]{network_large.jpg}}
 % \end{figure}
 % \end{frame}
+
+
+\begin{frame}
+    \fullimage{point_neuron.png}{0.4}
+\end{frame}
+
+\begin{frame}{Mange kretser kan settes sammen til et nevron med utstrekning}
+   \begin{figure}
+     \only<1>{\includegraphics[width=1\textwidth]{neuron.png}}
+     \only<2->{\includegraphics[width=1\textwidth]{model_creation.png}}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}
     \fullimage{network_large.jpg}{.26}
@@ -544,32 +546,50 @@
 \end{frame}
 
 
+\begin{frame}
+    \fullimage{neuron2.png}{.7}
+\end{frame}
+
+
 
 \begin{frame}
     \fullimage{ap.png}{0.5}
 \end{frame}
 
 
+\begin{frame}%{Ett nevron kan modeleres som en elektrisk krets}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{equation*}
+                   { I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
+            \end{equation*}
+         \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}  %%<--- here
+
+       \begin{center}
+       \begin{figure}
+           {\includegraphics[width=1\textwidth]{circuit2.png}}
+    \end{figure}
+   \end{center}
+    \end{column}
+    \end{columns}
+\end{frame}
 
 
-\begin{frame}{Forskjellige parametre gir forskjellige resultater}
+\begin{frame}%{Forskjellige parametre gir forskjellige resultater}
         \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-             \onslide<1-2>{\node [align=left, xshift=-0\textwidth, yshift=0.25\textwidth] (image3) at (current page.center)
-                   {$I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}$};}
-               \onslide<3->{\node [align=left, xshift=-0\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+               \onslide<1->{\node [align=left, xshift=-0\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
                      {$I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}$};}
            \end{tikzpicture}
 
-           \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-                \onslide<4>{\node [align=left, xshift=0\textwidth,yshift=-0.1\textwidth] (image3) at (current page.center)
-                    {\includegraphics[width = 0.8\textwidth]{hh_variation.png}};}
-                %   \node[align=left] at (image3.east) {\hspace{4cm} \bf Sette opp modellen};}
-              \end{tikzpicture}
 
-           \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-                \onslide<2>{\node [align=left, xshift=0.3\textwidth,yshift=0.15\textwidth] (image3) at (current page.center)
-                    {\includegraphics[width = 0.3\textwidth]{circuit2.png}};}
-              \end{tikzpicture}
+              \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+                   \onslide<1>{\node [align=left, xshift=0\textwidth,yshift=-0.1\textwidth] (image3) at (current page.center)
+                       {\includegraphics[width = 1\textwidth]{channels.jpg}};}
+                   %   \node[align=left] at (image3.east) {\hspace{4cm} \bf Sette opp modellen};}
+                 \end{tikzpicture}
 \end{frame}
 
 
@@ -620,12 +640,26 @@
 %     \end{figure}
 % \end{frame}
 
+
+
+
+
 \begin{frame}
-    \only<1>{\fullimage{deterministic_model.png}{.45}}
-    \only<2>{\fullimage{deterministic_input.png}{.45}}
-    \only<3>{\fullimage{deterministic.png}{.45}}
+    {\fullimage{deterministic_channels.png}{.2}}
 \end{frame}
 
+
+\begin{frame}
+    % \only<1>{\fullimage{deterministic_model.png}{.45}}
+    \only<1>{\fullimage{deterministic_input.png}{.45}}
+    \only<2>{\fullimage{deterministic.png}{.45}}
+\end{frame}
+
+\begin{frame}{Forskjellige parametre gir forskjellige resultater}
+        \begin{figure}
+           \includegraphics[width=1\textwidth]{hh_variation.png}
+        \end{figure}
+\end{frame}
 
 % \begin{frame}{Problemet er at biologiske parametre ikke er fiksert, men varierer}
 %         \vspace{-1cm}
@@ -634,8 +668,10 @@
 % \end{figure}
 % \end{frame}
 
+
+
 \begin{frame}
-    {\fullimage{distributions.png}{.25}}
+    {\fullimage{distributions_channels.png}{.2}}
 \end{frame}
 
 
@@ -657,6 +693,9 @@
 %
 %     \end{figure}
 % \end{frame}
+
+
+
 
 
 \begin{frame}
