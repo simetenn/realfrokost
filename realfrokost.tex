@@ -104,6 +104,13 @@
 
 
 
+\newenvironment{image}[2]{
+\usebackgroundtemplate{
+   \begin{tikzpicture}[remember picture, overlay]
+     \node[anchor = center] (image) at (current page.center) {\includegraphics[scale=#2]{#1}};
+   \end{tikzpicture}}
+     \begin{frame}[fragile, environment=image]}
+{\end{frame}}
 
 
 
