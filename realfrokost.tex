@@ -450,13 +450,27 @@
 \end{frame}
 
 
+% \begin{frame}{Ett nevron kan modeleres som en elektrisk krets}
+%
+%         \begin{equation*}
+%                \only<1>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
+%                \only<2>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
+%         \end{equation*}
+%
+% \end{frame}
+
 \begin{frame}{Ett nevron kan modeleres som en elektrisk krets}
+        \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+              \onslide<1->{\node [align=left, xshift=-0\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+                     {$I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color<2>{logored}I_{\text{kanaler}}}$};}
+           \end{tikzpicture}
 
-        \begin{equation*}
-               \only<1>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
-               \only<2>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
-        \end{equation*}
 
+              \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+                   \onslide<2>{\node [align=left, xshift=0\textwidth,yshift=-0.1\textwidth] (image3) at (current page.center)
+                       {\includegraphics[width = 1\textwidth]{channels.jpg}};}
+                   %   \node[align=left] at (image3.east) {\hspace{4cm} \bf Sette opp modellen};}
+                 \end{tikzpicture}
 \end{frame}
 
 %  {\setbeamercolor{background canvas}{bg=black}
