@@ -251,32 +251,38 @@
 
 
 \begin{frame}
-    \fullimage{number.png}{0.4}
+    \fullimage{number.png}{0.63}
 \end{frame}
 
 \begin{frame}
-    \fullimage{synapse.png}{0.2}
+    \fullimage{synapse.png}{0.37}
 \end{frame}
 
 \begin{frame}{}
+  % \vspace{10mm}
     \begin{columns}
     \begin{column}{0.5\textwidth}
+      \begin{overlayarea}{\textwidth}{\textheight}
         \begin{center}
         \begin{figure}
-            \only<1,5->{\includegraphics[width=1\textwidth]{romlig.png}}
-            \only<2>{\includegraphics[width=1\textwidth]{romlig_1.png}}
-            \only<3>{\includegraphics[width=1\textwidth]{romlig_2.png}}
-            \only<4>{\includegraphics[width=1\textwidth]{romlig_3.png}}
+            \only<1,5->{\includegraphics[width=1.2\textwidth]{romlig.png}}
+            \only<2>{\includegraphics[width=1.2\textwidth]{romlig_1.png}}
+            \only<3>{\includegraphics[width=1.2\textwidth]{romlig_2.png}}
+            \only<4>{\includegraphics[width=1.2\textwidth]{romlig_3.png}}
      \end{figure}
     \end{center}
+  \end{overlayarea}
     \end{column}
     \begin{column}{0.5\textwidth}  %%<--- here
+      \begin{overlayarea}{\textwidth}{\textheight}
+
         \begin{center}
-          \only<5>{\includegraphics[width=1\textwidth]{tid.png}}
-          \only<6>{\includegraphics[width=1\textwidth]{tid_1.png}}
-          \only<7>{\includegraphics[width=1\textwidth]{tid_2.png}}
-          \only<8>{\includegraphics[width=1\textwidth]{tid_3.png}}
+          \only<5>{\includegraphics[width=1.1\textwidth]{tid.png}}
+          \only<6>{\includegraphics[width=1.1\textwidth]{tid_1.png}}
+          \only<7>{\includegraphics[width=1.1\textwidth]{tid_2.png}}
+          \only<8>{\includegraphics[width=1.1\textwidth]{tid_3.png}}
          \end{center}
+       \end{overlayarea}
     \end{column}
     \end{columns}
 \end{frame}
@@ -314,7 +320,9 @@
 \end{frame}
 
 \begin{frame}{\color<-2>{white}Forskjellig konsentrasjon av positive og negative ioner (elektriske ladninger) setter opp ett elektrisk felt}
+  \begin{overlayarea}{\textwidth}{\textheight}
 \vspace{-5mm}
+
    \begin{figure}
         \only<1>{\includegraphics[width=1\textwidth]{membrane.png}}
         \only<2>{\includegraphics[width=1\textwidth]{membrane_focus.png}}
@@ -324,6 +332,7 @@
         \only<4>{\includegraphics[width=1\textwidth]{membraneNa.png}}
         \only<5>{\includegraphics[width=1\textwidth]{membraneA.png}}
 \end{figure}
+\end{overlayarea}
 \end{frame}
 
 
@@ -403,7 +412,7 @@
 
 
 \begin{frame}
-  \fullimage{simulation.png}{0.32}
+  \fullimage{simulation.png}{0.33}
 \end{frame}
 
 
@@ -445,7 +454,7 @@
 
         \begin{equation*}
                \only<1>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
-              %  \only<2>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
+               \only<2>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
         \end{equation*}
 
 \end{frame}
@@ -627,11 +636,11 @@
                  \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{2 årsaker til usikkerhet: måleusikkerthet}
+\begin{frame}%{2 årsaker til usikkerhet: måleusikkerthet}
   \fullimage{measurement.jpg}{0.3}
 \end{frame}
 
-\begin{frame}{2 årsaker til usikkerhet: biologiske parametre varierer}
+\begin{frame}%{2 årsaker til usikkerhet: biologiske parametre varierer}
   \only<1>{\fullimage{height2.png}{0.2}}
   \only<2>{\fullimage{height_distribution.png}{1.1}}
 \end{frame}
@@ -692,11 +701,6 @@
 % \end{frame}
 %
 
-\begin{frame}
-    % \only<1>{\fullimage{deterministic_model.png}{.45}}
-    % \only<1>{\fullimage{deterministic_input.png}{.45}}
-    \only<1>{\fullimage{deterministic.png}{.45}}
-\end{frame}
 
 % \begin{frame}{Forskjellige parametre gir forskjellige resultater}
 %         \begin{figure}
@@ -743,9 +747,17 @@
 
 \begin{frame}
     \only<1>{\fullimage{probabalistic_no_uncertainpy.png}{.35}}
-    \only<2>{\fullimage{probabalistic.png}{.35}}
+      \only<2>{\fullimage{deterministic.png}{.45}}
+    \only<3>{\fullimage{probabalistic.png}{.35}}
 \end{frame}
 
+%
+%
+% \begin{frame}
+%     % \only<1>{\fullimage{deterministic_model.png}{.45}}
+%     % \only<1>{\fullimage{deterministic_input.png}{.45}}
+%
+% \end{frame}
 
 % \begin{frame}{Uncertainty quantification relates uncertain parameters and model results}
 %     \begin{figure}
