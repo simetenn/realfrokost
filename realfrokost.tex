@@ -150,7 +150,7 @@
 \begin{frame}%{\color{myred} Beregningsorientert nevrovitenskap}
 \begin{center}
 \vspace{-40mm}
-    \textbf{\color{myred}\LARGE Beregningsorientert nevrovitenskap}
+    \textbf{\color{myred}\LARGE Hvordan kan vi modelere hjernen med en datamaskin?}
     \vspace{3mm}
 
     Simen Tennøe
@@ -214,29 +214,29 @@
 
 
 
-
-
-
-\begin{frame}[fragile]{}
-    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-      \node [align=left, xshift=-0.4\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
-            {\includegraphics[width = 0.2\textwidth]{brain.jpg}};
-      \node[align=left] at (image3.east) {\hspace{6cm} \bf Grunnlegende nevrovitenskap};
-    \end{tikzpicture}
-
-  \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-  \node [align=left, opacity=0.35, xshift=-0.2\textwidth,yshift=0\textwidth] (image1) at (current page.center)
-      {\includegraphics[width = 0.2\textwidth]{brain_circuits.jpg}};
-  \node[align=left, opacity=0.35] at (image1.east) {\hspace{7.5cm} \bf Beregningsorientert nevrovitenskap};
-  \end{tikzpicture}
-
-
-    \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
-      \node [align=left, opacity=0.35, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
-            {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
-      \node[align=left, opacity=0.35] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
-    \end{tikzpicture}
-\end{frame}
+%
+%
+%
+% \begin{frame}[fragile]{}
+%     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+%       \node [align=left, xshift=-0.4\textwidth,yshift=0.25\textwidth] (image3) at (current page.center)
+%             {\includegraphics[width = 0.2\textwidth]{brain.jpg}};
+%       \node[align=left] at (image3.east) {\hspace{6cm} \bf Grunnlegende nevrovitenskap};
+%     \end{tikzpicture}
+%
+%   \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+%   \node [align=left, opacity=0.35, xshift=-0.2\textwidth,yshift=0\textwidth] (image1) at (current page.center)
+%       {\includegraphics[width = 0.2\textwidth]{brain_circuits.jpg}};
+%   \node[align=left, opacity=0.35] at (image1.east) {\hspace{7.5cm} \bf Beregningsorientert nevrovitenskap};
+%   \end{tikzpicture}
+%
+%
+%     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
+%       \node [align=left, opacity=0.35, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
+%             {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
+%       \node[align=left, opacity=0.35] at (image2.east) {\hspace{4cm} \bf Usikkerhet i nevrovitenskap};
+%     \end{tikzpicture}
+% \end{frame}
 
 
 % \begin{frame}{Nevrovitenskap er studiet hjernen og nervesystemet}
@@ -247,6 +247,38 @@
 
 \begin{frame}
     \fullimage{brain.jpg}{2}
+\end{frame}
+
+
+\begin{frame}
+    \fullimage{number.png}{0.4}
+\end{frame}
+
+\begin{frame}
+    \fullimage{synapse.png}{0.2}
+\end{frame}
+
+\begin{frame}{}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{center}
+        \begin{figure}
+            \only<1,5->{\includegraphics[width=1\textwidth]{romlig.png}}
+            \only<2>{\includegraphics[width=1\textwidth]{romlig_1.png}}
+            \only<3>{\includegraphics[width=1\textwidth]{romlig_2.png}}
+            \only<4>{\includegraphics[width=1\textwidth]{romlig_3.png}}
+     \end{figure}
+    \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}  %%<--- here
+        \begin{center}
+          \only<5>{\includegraphics[width=1\textwidth]{tid.png}}
+          \only<6>{\includegraphics[width=1\textwidth]{tid_1.png}}
+          \only<7>{\includegraphics[width=1\textwidth]{tid_2.png}}
+          \only<8>{\includegraphics[width=1\textwidth]{tid_3.png}}
+         \end{center}
+    \end{column}
+    \end{columns}
 \end{frame}
 
 % \begin{frame}{Hjerneceller (nevroner) kommuniserer via elektriske signaler}
@@ -273,7 +305,7 @@
        \only<2>{\fullimage{neuron2_soma.png}{0.7}}
        \only<3>{\fullimage{neuron2_axon.png}{0.7}}
        \only<4>{\fullimage{neuron2_axon2.png}{0.7}}
-    %    \only<5>{\fullimage{neuron2_dend.png}{0.7}}
+       \only<5>{\fullimage{neuron2_dend.png}{0.7}}
 \end{figure}
 \end{frame}
 
@@ -331,22 +363,7 @@
     \fullimage{network2.jpg}{0.5}
 \end{frame}
 
-\begin{frame}{}
-    \begin{columns}
-    \begin{column}{0.5\textwidth}
-        \begin{center}
-        \begin{figure}
-            \only<1->{\includegraphics[width=1\textwidth]{romlig.png}}
-     \end{figure}
-    \end{center}
-    \end{column}
-    \begin{column}{0.5\textwidth}  %%<--- here
-        \begin{center}
-                \only<2>{\includegraphics[width=1\textwidth]{tid.png}}
-         \end{center}
-    \end{column}
-    \end{columns}
-\end{frame}
+
 
 
 
@@ -379,10 +396,15 @@
     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
       \node [align=left, opacity=0.35, xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
             {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
-      \node[align=left, opacity=0.35] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
+      \node[align=left, opacity=0.35] at (image2.east) {\hspace{4cm} \bf Usikkerhet i nevrovitenskap};
     \end{tikzpicture}
 \end{frame}
 
+
+
+\begin{frame}
+  \fullimage{simulation.png}{0.32}
+\end{frame}
 
 
 \begin{frame}{Ett nevron kan modeleres som en elektrisk krets}
@@ -423,7 +445,7 @@
 
         \begin{equation*}
                \only<1>{ I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
-               \only<2>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
+              %  \only<2>{I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + {\bf\color{logored}I_{\text{kanaler}}}}
         \end{equation*}
 
 \end{frame}
@@ -483,15 +505,32 @@
 
 
 \begin{frame}
-    \fullimage{point_neuron.png}{0.4}
+    \fullimage{point_neuron.png}{0.2}
 \end{frame}
 
+\begin{frame}
+    \fullimage{neuron2.png}{0.7}
+\end{frame}
+
+
+
 \begin{frame}{Mange kretser kan settes sammen til et nevron med utstrekning}
+  \begin{overlayarea}{\textwidth}{\textheight}
+
    \begin{figure}
      \only<1>{\includegraphics[width=1\textwidth]{neuron.png}}
      \only<2->{\includegraphics[width=1\textwidth]{model_creation.png}}
+    %  \only<3>{\[\frac{1}{r_l} \frac{\partial ^2 V}{\partial x^2}=c_m \frac{\partial V}{\partial t}+\frac{V}{r_m}\]}
 \end{figure}
+\begin{figure}
+  \only<3>{\includegraphics[width=1\textwidth]{cable.png}}
+\end{figure}
+\end{overlayarea}
 \end{frame}
+
+
+% slide med vi forstår ikke hjernen med å regen ut hva ett nevron er, hviodo ønsker å se på netverk
+
 
 
 \begin{frame}
@@ -541,37 +580,37 @@
     \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
       \node [align=left,  xshift=0\textwidth,yshift=-0.25\textwidth] (image2) at (current page.center)
             {\includegraphics[width = 0.2\textwidth]{logo_small.png}};
-      \node[align=left] at (image2.east) {\hspace{4cm} \bf Usikkerhetsberegninger};
+      \node[align=left] at (image2.east) {\hspace{4cm} \bf Usikkerhet i nevrovitenskap};
     \end{tikzpicture}
 \end{frame}
 
 
 
 
-\begin{frame}
-    \fullimage{ap.png}{0.5}
-\end{frame}
+% \begin{frame}
+%     \fullimage{ap.png}{0.5}
+% \end{frame}
 
 
-\begin{frame}%{Ett nevron kan modeleres som en elektrisk krets}
-    \begin{columns}
-    \begin{column}{0.5\textwidth}
-
-               \begin{center}
-               \begin{figure}
-                   {\includegraphics[width=1\textwidth]{neuron2.png}}
-            \end{figure}
-           \end{center}
-    \end{column}
-    \begin{column}{0.5\textwidth}  %%<--- here
-        \begin{center}
- \begin{equation*}
-        { I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
- \end{equation*}
-\end{center}
-    \end{column}
-    \end{columns}
-\end{frame}
+% \begin{frame}%{Ett nevron kan modeleres som en elektrisk krets}
+%     \begin{columns}
+%     \begin{column}{0.5\textwidth}
+%
+%                \begin{center}
+%                \begin{figure}
+%                    {\includegraphics[width=1\textwidth]{neuron2.png}}
+%             \end{figure}
+%            \end{center}
+%     \end{column}
+%     \begin{column}{0.5\textwidth}  %%<--- here
+%         \begin{center}
+%  \begin{equation*}
+%         { I = C\frac{{\mathrm d} V}{{\mathrm d} t}  + I_{\text{kanaler}}}
+%  \end{equation*}
+% \end{center}
+%     \end{column}
+%     \end{columns}
+% \end{frame}
 
 
 \begin{frame}%{Forskjellige parametre gir forskjellige resultater}
@@ -588,6 +627,14 @@
                  \end{tikzpicture}
 \end{frame}
 
+\begin{frame}{2 årsaker til usikkerhet: måleusikkerthet}
+  \fullimage{measurement.jpg}{0.3}
+\end{frame}
+
+\begin{frame}{2 årsaker til usikkerhet: biologiske parametre varierer}
+  \only<1>{\fullimage{height2.png}{0.2}}
+  \only<2>{\fullimage{height_distribution.png}{1.1}}
+\end{frame}
 
 
 % \begin{frame}%{Å lage en beregningsmodel består av tre steg, å sette opp modelen, estimere parametre og beregne usikkerhetene}
@@ -640,22 +687,22 @@
 
 
 
-\begin{frame}
-    {\fullimage{deterministic_channels.png}{.2}}
-\end{frame}
-
+% \begin{frame}
+%     {\fullimage{deterministic_channels.png}{.2}}
+% \end{frame}
+%
 
 \begin{frame}
     % \only<1>{\fullimage{deterministic_model.png}{.45}}
-    \only<1>{\fullimage{deterministic_input.png}{.45}}
-    \only<2>{\fullimage{deterministic.png}{.45}}
+    % \only<1>{\fullimage{deterministic_input.png}{.45}}
+    \only<1>{\fullimage{deterministic.png}{.45}}
 \end{frame}
 
-\begin{frame}{Forskjellige parametre gir forskjellige resultater}
-        \begin{figure}
-           \includegraphics[width=1\textwidth]{hh_variation.png}
-        \end{figure}
-\end{frame}
+% \begin{frame}{Forskjellige parametre gir forskjellige resultater}
+%         \begin{figure}
+%            \includegraphics[width=1\textwidth]{hh_variation.png}
+%         \end{figure}
+% \end{frame}
 
 % \begin{frame}{Problemet er at biologiske parametre ikke er fiksert, men varierer}
 %         \vspace{-1cm}
@@ -846,14 +893,15 @@
 
 
 
-  \begin{frame}{Oppsumering: beregningsorientert nevrovitenskap modelerer nevroner som elektriske kretser}
-\vspace{-15mm}
+  \begin{frame}{Oppsumering}
+
+    \vspace{-15mm}
 \begin{columns}
 
      \column{.5\textwidth}
      \begin{center}
         \raggedright
-      \bf{Nevroner kan modeleres som elektriske kretser i ett nettverk}
+      \bf{Nevroner kan modeleres som elektriske kretser}
      \end{center}
      \column{.5\textwidth}
      \begin{center}
@@ -861,14 +909,33 @@
      \end{center}
 
  \end{columns}
+ % \vspace{-5mm}
 
- % \vspace{5mm}
+\vspace{5mm}
+\pause
+ \begin{columns}
+
+      \column{.5\textwidth}
+      \begin{center}
+             \includegraphics[width=0.4\textwidth]{network_large.jpg}
+      \end{center}
+
+      \column{.5\textwidth}
+      \begin{center}
+         \raggedright
+       \bf{Slike nevroner kan kobles sammen i nettverk}
+      \end{center}
+
+  \end{columns}
+ \vspace{5mm}
+ % \vspace{-5mm}
+
 \pause
 \begin{columns}
   \column{.5\textwidth}
   \begin{center}
       \raggedright
-   \bf{Usikkerhetsberegninger gjør at man kan ta hensyn til biologiske parametre som varierer}
+   \bf{Usikkerhetsberegninger tar hensyn til variable biologiske parametre}
   \end{center}
        \column{.5\textwidth}
      \begin{center}
@@ -887,7 +954,7 @@
 \pause
 \begin{tikzpicture}[remember picture, overlay, font=\sffamily]
 
-  \node[align=left, yshift=0.1\textwidth, opacity=0.9] at (current page.south){ \bf \large Takk for meg!};
+  \node[align=left, yshift=.05\textwidth, opacity=0.9] at (current page.south){ \bf \large Takk for meg!};
 \end{tikzpicture}
 
 
